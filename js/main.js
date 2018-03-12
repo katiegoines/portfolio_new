@@ -24,3 +24,27 @@ function size() {
 
 size()
 window.addEventListener('resize', size)
+
+
+// Show hidden projects
+
+$more = $('.more')
+
+$more.on('click', function() {
+  event.preventDefault()
+  $destination = $(this).attr('href') 
+  $($destination).removeClass('project-display')
+})
+
+// Hide projects
+
+$back = $('.back')
+
+$back.on('click', function() {
+  event.preventDefault()
+  $parent = $(this).parent().attr('id')
+  setTimeout(function() {
+    $('#' + $parent).addClass('project-display')
+
+  }, 500)
+})

@@ -1,9 +1,13 @@
-#home, #about, #skills, #projects, #contact {
+#home, #about, #skills, #projects, #contact, #move-it, #tripply, #race, #homework {
   padding-top: 56px;
   min-height: 100vh;
   /* height: calc(100vh - 56px); */
   width: 100%;
   border: 3px solid red;
+}
+
+.project-display {
+  display: none;
 }
 
 /* .container {
@@ -15,12 +19,12 @@
 
 .navbar-light.bg-light {
   /* background: white !important; */
-  background: rgba(255,255,255,0.5) !important;
+  background: rgba(0,0,0,0.5) !important;
+  min-height: 56px;
 }
 
 .navbar-toggler {
   border: none !important;
-  /* color: #1D8A99 !important; */
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {
@@ -42,4 +46,60 @@
 .nav-padding {
   padding-top: 50px;
   margin-left: 16px;
+}
+
+.icon {
+  width: 32px;
+  margin: 0 auto;
+}
+
+.fa-angle-down {
+  color: purple;
+}
+
+.svg-inline--fa {
+  font-size: 50px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  width: 100%;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.project {
+  /* width: 30%; */
+  position: relative;
+  margin: 5px auto;
+  display: inline-block;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 15px;
+  height: 100%;
+  border-radius: 3px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1D8A99;
+}
+
+.project:hover .overlay {
+  opacity: 1;
 }
