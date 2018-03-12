@@ -1,0 +1,45 @@
+#home, #about, #skills, #projects, #contact {
+  padding-top: 56px;
+  min-height: 100vh;
+  /* height: calc(100vh - 56px); */
+  width: 100%;
+  border: 3px solid red;
+}
+
+/* .container {
+  margin-top: 56px;
+} */
+
+
+/* NAVBAR */
+
+.navbar-light.bg-light {
+  /* background: white !important; */
+  background: rgba(255,255,255,0.5) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  /* color: #1D8A99 !important; */
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 24px;
+  top: 8px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.nav-padding {
+  padding-top: 50px;
+  margin-left: 16px;
+}
