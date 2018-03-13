@@ -64,15 +64,14 @@ function skillsHeight() {
 
 function projectHeight() {
   $projects = $('#projects').height()
-  $icon = $('#projects').children('.icon')
-
+  $space = $('#projects:nth-child(3)')
   if($projects > $viewport) {
-    $icon.css('bottom', '-50px')
+    $space.css('padding-bottom', '30px')
   }
 }
 
 
-projectHeight()
 skillsHeight()
+projectHeight()
 window.addEventListener("resize", skillsHeight)
 window.addEventListener("resize", projectHeight)
