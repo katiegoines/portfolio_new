@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Pangolin|Patrick+Hand+SC|Roboto+Slab" rel="stylesheet">
   <title>Katie Goines</title>
 </head>
 
@@ -46,19 +46,21 @@
     <div id="home">
       <h1>Katie Goines</h1>
       <h2>Web Developer</h2>
+      <small>I'm a web developer because I love the intersection of creativity and logic. I like being precise and thoughtful, but also having the latitude to experiment. I make ideas come to life.</small>
       <div class="icon">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>    
+        <a href="#skills"><i class="fas fa-angle-down"></i></a>    
       </div>       
     </div>
 
-    <div id="about">
+    <!-- <div id="about">
       <h2>About</h2>
       <p>Hi. I'm Katie.</p>
       <p>I'm a web developer because I love the intersection of creativity and logic. I like being precise and thoughtful, but also having the latitude to experiment. I make ideas come to life.</p>
       <p><a href="">Download my resume</a></p>
       <div class="icon">
         <a href="#skills"><i class="fas fa-angle-down"></i></a>    
-      </div>    </div>
+      </div>    
+    </div> -->
 
     <div id="skills">
       <h2>Technical Skills</h2>
@@ -74,29 +76,50 @@
       <div class="projects row">
         <div class="project col-6">
           <img src="images/01-thumbnail.jpg" alt="">
-          <div class="overlay">
-            <a href="#move-it" class="more">See More</a>
-          </div>
+          <a href="#move-it" class="more">
+            <div class="overlay">
+              <div class="overlay-text">
+                <div>see more about</div>
+                <div class="move-font">Move It!</div>
+              </div>
+            </div>
+          </a>
         </div>
+
         <div class="project col-6">
           <img src="images/02-thumbnail.jpg" alt="">
-          <div class="overlay">
-            <a href="#tripply" class="more">See More</a>
-          </div>
+          <a href="#tripply" class="more">
+            <div class="overlay">
+              <div class="overlay-text">
+                <div>see more about</div>
+                <div class="tripply-font">Tripply</div>
+              </div>
+            </div>
+          </a>
 
         </div>
         <div class="project col-6">
-          <img src="images/03-thumbnail.jpg" alt="">
-          <div class="overlay">
-            <a href="#homework" class="more">See More</a>
-          </div>
+          <img src="images/03-thumbnail2.jpg" alt="">
+          <a href="#homework" class="more">
+            <div class="overlay">
+              <div class="overlay-text">
+                <div>see more about</div>
+                <div class="homework-font">Science Reporter</div>
+              </div>
+            </div>
+          </a>
 
         </div>
         <div class="project col-6">
           <img src="images/04-thumbnail.jpg" alt="">
-          <div class="overlay">
-            <a href="#race" class="more">See More</a>
-          </div>
+          <a href="#race" class="more">
+            <div class="overlay">
+              <div class="overlay-text">
+                <div>see more about</div>
+                <div class="race-font">Race Through Space</div>
+              </div>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -108,32 +131,77 @@
 
     <div id="move-it" class="project-display">
       <h2>Move It!</h2>
+      <div class="project-full">
+        <img src="images/01-full.jpg" alt="">
+        <p>An app that curates information about user-entered locations</p>
+        <p>Built in a four-day sprint using React, Node.js, MongoDB, Express, JavaScript, Milligram, HTML, CSS, Yelp Fusion API, Google Geocode API, Google Places API, Google Static Maps</p>
+        <small>To log in to a sample account, use username [ ap@email.com ] and password [ password ]</small>
+        <div class="buttons">
+          <a href="https://gomoveit.herokuapp.com" target="_blank"><button class="btn btn-link">App</button></a>
+          <a href="https://github.com/katiegoines/move-it" target="_blank"><button class="btn btn-link">Code</button></a>
+        </div>
+      </div>
       <a href="#projects" class="back">Back</a>
 
     </div>
 
     <div id="tripply" class="project-display">
       <h2>Tripply</h2>
+      <div class="project-full">
+        <img src="images/02-full.jpg" alt="">
+        <p>An itinerary building app </p>
+        <p>Built with a team of 4 in a four-day sprint using Node.js, MongoDB, Express, JavaScript, jQuery, AJAX, HTML, CSS, Bootstrap, Yelp Fusion API, Google Maps API, OpenWeatherMaps API</p>
+        <small>To log in to a sample account, use username [ ap@email.com ] and password [ password ]</small>
+        <div class="buttons">
+          <a href="https://gotripply.herokuapp.com" target="_blank"><button class="btn btn-link">App</button></a>
+          <a href="https://github.com/katiegoines/tripply" target="_blank"><button class="btn btn-link">Code</button></a>
+        </div>
+      </div>
       <a href="#projects" class="back">Back</a>
     </div>
 
     <div id="homework" class="project-display">
       <h2>Homework Connector</h2>
+      <div class="project-full">
+        <img src="images/03-full.jpg" alt="">
+        <p>An online homework portal to facilitate teacher/student communication</p>
+        <p>Built in a four-day sprint using Ruby on Rails, PostgreSQL, Bootstrap, HTML, CSS</p>
+        <small>To log in to a sample account, use username [ zr@student.com ] and password [ p ]</small>
+        <div class="buttons">
+          <a href="https://science-reporter.herokuapp.com" target="_blank"><button class="btn btn-link">App</button></a>
+          <a href="https://github.com/katiegoines/homework_portal" target="_blank"><button class="btn btn-link">Code</button></a>
+        </div>
+      </div>
       <a href="#projects" class="back">Back</a>
 
     </div>
 
     <div id="race" class="project-display">
       <h2>Race Through Space</h2>
+      <div class="project-full">
+        <img src="images/04-full.jpg" alt="">
+        <p>A two-player, space-themed virtual board game</p>
+        <p>Built in a four-day sprint using HTML, CSS, JavaScript, jQuery</p>
+        <div class="buttons">
+          <a href="https://katiegoines.github.io/boardgame/" target="_blank"><button class="btn btn-link">App</button></a>
+          <a href="https://github.com/katiegoines/boardgame" target="_blank"><button class="btn btn-link">Code</button></a>
+        </div>
+      </div>
       <a href="#projects" class="back">Back</a>
-
     </div>
 
     <div id="contact">
       <h2>Contact</h2>
+      <div class="icon-up">
+        <a href="#home"><i class="fas fa-angle-up"></i></a>
+      </div>
     </div>
+
+    
   </div>
 
+  <div id="foot">
+  </div>
 
 
 
