@@ -48,3 +48,31 @@ $back.on('click', function() {
 
   }, 500)
 })
+
+// If small
+
+$viewport = $(window).height()
+
+function skillsHeight() {
+  $skills = $('#skills').height()
+  $icon = $('#skills').children('.icon')
+
+  if($skills > $viewport) {
+    $icon.css('bottom', '-50px')
+  }
+}
+
+function projectHeight() {
+  $projects = $('#projects').height()
+  $icon = $('#projects').children('.icon')
+
+  if($projects > $viewport) {
+    $icon.css('bottom', '-50px')
+  }
+}
+
+
+projectHeight()
+skillsHeight()
+window.addEventListener("resize", skillsHeight)
+window.addEventListener("resize", projectHeight)

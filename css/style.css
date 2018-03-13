@@ -1,4 +1,14 @@
+body {
+  font-family: Roboto, sans-serif !important;
+}
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 #home, #about, #skills, #projects, #move-it, #tripply, #race, #homework {
   padding-top: 100px;
@@ -16,15 +26,6 @@
   position: relative;
   text-align: center;
 }
-
-.project-display {
-  display: none;
-}
-
-/* .container {
-  margin-top: 56px;
-} */
-
 
 /* NAVBAR */
 
@@ -48,6 +49,14 @@
     top: 8px;
   }
 
+  .nav-link, .navbar-brand {
+    transition: all .2s ease-in-out;
+  }
+
+  .nav-link:hover, .navbar-brand:hover {
+    transform: scale(1.1);
+  }
+
   .navbar-toggler {
     position: absolute;
     top: 8px;
@@ -59,30 +68,97 @@
     margin-left: 16px;
   }
 
+  .svg-inline--fa.fa-linkedin-in, .svg-inline--fa.fa-github, .svg-inline--fa.fa-linkedin, .svg-inline--fa.fa-github-square, .svg-inline--fa.fa-envelope, .svg-inline--fa.fa-paper-plane {
+    font-size: 24px;
+    margin: 5px;
+    color: #008490;
+    transition: all .2s ease-in-out;
+
+  }
+
+  .svg-inline--fa.fa-linkedin-in:hover, .svg-inline--fa.fa-github:hover, .svg-inline--fa.fa-linkedin:hover, .svg-inline--fa.fa-github-square:hover, .svg-inline--fa.fa-envelope:hover, .svg-inline--fa.fa-paper-plane:hover {
+    transform: scale(1.1);
+  }
+
+/*  OTHER */
+
   .icon {
     width: 32px;
-    margin: 0 auto;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .icon-up {
     width: 32px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
-  .fa-angle-down, .fa-angle-up {
-    color: purple;
+  .fa-angle-down, .fa-angle-up, .fa-times {
+    color: #FE6F67;
   }
 
-  .svg-inline--fa {
+  .svg-inline--fa.fa-angle-down, .svg-inline--fa.fa-angle-up {
     font-size: 50px;
   }
 
+  .svg-inline--fa.fa-times {
+    font-size: 30px;
+  }
+
+/* Home */
+
+  .title {
+    font-size: 100px;
+    line-height: 100px;
+    margin-top: 10%;
+  }
+  
+  .title-sub {
+    margin-top: 25px;
+  }
+
+  .title-line {
+    /* width: 32px; */
+    /* margin: 0 auto; */
+    position: absolute;
+    bottom: 75px;
+    /* left: 50%; */
+  }
+
+  .teal {
+    color: #026A77;
+  }
+
+  .coral-1 {
+    color: #FE6F67;
+  }
+  
+  .coral-2 {
+    color: #FD4D4D;
+  }
+
+
+/* SKILLS */
+.skills-body div {
+  margin: 30px 0;
+  /* word-spacing: 50px; */
+}
+
+.skills-body h5 {
+  /* text-decoration: underline #FE6F67 solid; */
+  font-weight: 600;
+}
+  /* .skills-body h5, .skills-body p {
+    display: inline-block;
+  } */
 
 /* PROJECTS */
 
@@ -98,7 +174,7 @@
   .project {
     /* width: 30%; */
     position: relative;
-    margin: 5px auto;
+    margin: 25px auto;
     display: inline-block;
   }
 
@@ -107,6 +183,7 @@
     width: 100%;
     border-radius: 3px;
     /* box-shadow: -2px 2px 2px 2px rgba(0,0,0,0.3); */
+    /* border: 2px solid #008490; */
   }
 
   .overlay {
@@ -153,7 +230,11 @@
     font-family: 'Pangolin', cursive;
   }
 
-  /* Project Full */
+  .project-display {
+    display: none;
+  }
+
+/* Project Full */
 
   .project-full {
     width: 100%;
@@ -162,11 +243,50 @@
 
   .project-full img {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     border-radius: 3px;
   }
 
+  .project-button {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    color: #00999E;
+    margin: 25px;
+  }
+
+  .project-button:hover {
+    transform: scale(1.1);
+    color: #00999E;
+    text-decoration: none;
+  }
+
+
+/* Contact */
+
+  #contact .svg-inline--fa.fa-paper-plane, #contact .svg-inline--fa.fa-envelope {
+    font-size: 75px;
+    margin: 5px;
+  }
+
+  .contact-body {
+    margin: 75px;
+  }
+  
+/* Footer */
+
   #foot {
     height: 100px;
-    background: black;
+    background: #00999E;
+  }
+
+  .footer-icons {
+    width: 68px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  #foot .svg-inline--fa.fa-linkedin, #foot .svg-inline--fa.fa-github-square {
+    font-size: 24px;
+    margin: 5px;
+    color: white;
   }
