@@ -57,8 +57,6 @@ function skillsHeight() {
   $skills = $('#skills').height() + 100
   $div = $('.skills-body:nth-child(6)')
   $icon = $('#skills').children('.icon')
-  console.log($skills)
-  console.log($viewport)
   if($skills > $viewport) {
     $icon.css('bottom', '-50px')
   }
